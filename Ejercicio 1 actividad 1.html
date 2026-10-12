@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="ejercicio 1.css">
+  <head>
+    <title>Ejercicio 1</title>
+  </head>
+  <body>
+    <iframe
+      srcdoc="
+        <style>
+          body { font-family: Verdana; }
+          h1 { font-size: 20px; }
+          h2 { font-size: 14px; color: red; }
+          p { font-size: 15px; }
+          img { width: 200px; display: block; margin: 0 auto; }
+          .subrayado { text-decoration: underline; }
+          .negrita { font-weight: bold; }
+          .destacado { background-color: yellow; }
+          a { color: blue; text-decoration: underline; }
+          .enlace-box {
+            display: inline-block;
+            background-color: #d9d9d9;
+            border: 1px solid #b3b3b3;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin-top: 10px;
+          }
+        </style>
+
+        <h1>Esto es un encabezado h1</h1>
+        <h2>Esto es un encabezado h2</h2>
+        <br>
+        <img src='Captura de pantalla 2026-09-30 105601.png' alt='Imagen de ejemplo'>
+        <br>
+        <p>Esto es un párrafo con un <span class='destacado'>tamaño de 30px</span></p>
+        <br><span class='subrayado'>y un salto de linea</span>. El estilo utiliza una <span class='negrita'>fuente verdana</span>
+        <br><br>
+        <div class='enlace-box'>
+          <a href='https://www.google.com' target='_blank'>Esto es un hipervínculo que va a Google. Ir a Google</a>
+        </div>
+      "
+      width="600"
+      height="400"
+      title="Mi iframe">
+    </iframe>
+  </body>
+</html>

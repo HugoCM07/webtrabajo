@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tabla prueba 1</title>
+        <style>
+            h1 {
+                text-align: center;
+                font-size: 20px;
+                margin: 0 0 10px 0;
+                width: 100%;
+            }
+
+            .tabla-contenedor {
+                border: 2px solid blue;
+                display: inline-block;
+                padding: 10px;
+                background: white;
+                margin-top: 10px;
+            }
+
+            .encabezado {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 0;
+                font-weight: bold;
+                margin-bottom: 0;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .encabezado span {
+                padding: 6px 10px;
+                text-align: center;
+            }
+
+            table {
+                border-collapse: separate;
+                border-spacing: 4px;
+                font-size: 14px;
+                margin-top: 0;
+                width: 100%;
+            }
+
+            td {
+                border: 1px solid blue;
+                color: black;
+                padding: 6px 10px;
+                text-align: center;
+                background: white;
+            }
+
+            .tabla2 {
+                border-collapse: collapse;
+                border-spacing: 0;
+                width: auto;
+                font-size: 14px;
+                margin-top: 10px;
+            }
+
+            .tabla2 td {
+                border: 1px solid orange;
+                background: white;
+                color: black;
+                padding: 6px 10px;
+                text-align: center;
+            }
+
+            .tabla2 tr:first-child td {
+                background: #d9d9d9;
+            }
+
+            .tabla2 tr:nth-child(2) td {
+                background: #169c16;
+            }
+
+            .tabla2 tr:nth-child(3) td {
+                background: #d9d9d9;
+            }
+
+            .tabla2 tr:nth-child(4) td {
+                background: #169c16;
+            }
+
+            .tabla2 tr:nth-child(5) td {
+                background: #d9d9d9;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Tabla prueba 1</h1>
+        </header>
+
+        <div class="tabla-contenedor">
+            <div class="encabezado">
+                <span>Columna 1</span>
+                <span>Columna 2</span>
+                <span>Columna 3</span>
+                <span>Columna 4</span>
+            </div>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td>col1</td>
+                        <td colspan="2">col2</td>
+                        <td rowspan="2">col3</td>
+                    </tr>
+                    <tr>
+                        <td>colum1</td>
+                        <td>colum2</td>
+                        <td>colum4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <header>
+            <h1>Tabla prueba 2</h1>
+        </header>
+
+        <table class="tabla2">
+            <tbody>
+                <tr>
+                    <td>columna 1</td>
+                    <td>columna 2</td>
+                    <td>columna 3</td>
+                    <td>columna 4</td>
+                </tr>
+                <tr>
+                    <td>col1</td>
+                    <td colspan="2">col2</td>
+                    <td>col3</td>
+                </tr>
+                <tr>
+                    <td>colum1</td>
+                    <td rowspan="2">colum2</td>
+                    <td>colum3</td>
+                    <td>colum4</td>
+                </tr>
+                <tr>
+                    <td>column 1</td>
+                    <td>column 3</td>
+                    <td>column 4</td>
+                </tr>
+                <tr>
+                    <td>colu1</td>
+                    <td>colu2</td>
+                    <td>colu3</td>
+                    <td>colu4</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

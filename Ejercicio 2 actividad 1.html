@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicio 2</title>
+</head>
+<body>
+  <iframe
+    srcdoc="
+      <style>
+        body { margin:0; font-family:Verdana; }
+        .contenedor { position:relative; width:100%; height:600px; }
+        img { display:block; width:100%; height:100%; object-fit:cover; }
+        h2 {
+          position:absolute; top:10px; left:50%;
+          transform:translateX(-50%);
+          color:black;
+          padding:4px 8px;
+          border-radius:4px;
+          font-size:16px;
+        }
+        .boton {
+          position:absolute; left:20px; top:90px;
+          background:#f4a300; color:white;
+          padding:10px 22px; border-radius:8px;
+          text-decoration:none; font-weight:bold;
+        }
+        .pre {
+          position:absolute; left:20px; top:150px;
+          color:black; font-weight:bold;
+        }
+        .parrafo {
+          position:absolute; left:20px; top:200px;
+          color:black; font-weight:bold;
+        }
+        .parrafo a, .btn-google {
+          color:blue; text-decoration:underline;
+        }
+        .btn-google {
+          display:inline-block; background:#f4a300; color:white;
+          padding:8px 16px; border-radius:8px; text-decoration:none;
+          margin-left:8px;
+        }
+        .footer {
+          position:absolute; left:0; right:0; bottom:0;
+          height:80px; background:blue;
+          color:black;
+          display:flex; align-items:center; justify-content:flex-start; gap:10px;
+          padding-left:20px;
+        }
+        .mini-box {
+          background:white; color:black;
+          padding:6px 12px; border-radius:6px;
+          font-size:12px; font-weight:bold;
+        }
+        .capitulo {
+          position:absolute; left:20px; bottom:15px;
+          color:black; font-size:12px; font-weight:bold;
+        }
+      </style>
+
+      <div class='contenedor'>
+        <img src='images.jpg' alt='Flor'>
+        <h2>
+          <span style='color:red;'>Esto es un encabezado h4</span>
+          <span style='background:yellow; padding:2px 4px;'>h2</span>
+        </h2>
+
+        <a class='boton' href='#footer'>Ir a capítulo 4:</a>
+
+        <div class='pre'>esto es un texto<br>preformateado</div>
+        <p class='parrafo'>
+          Este hipervínculo va a
+          <a href='https://www.google.com' target='_blank'>google</a>
+          <a class='btn-google' href='https://www.google.com' target='_blank'>Ir a google:</a>
+        </p>
+
+        <div class='footer' id='footer'>
+          <span class='mini-box'>Hipervínculo en la misma pagina</span>
+        </div>
+        <div class='capitulo'>Esto es el Capitulo 4</div>
+      </div>
+    "
+    width='100%'
+    height='600'
+    title='Imagen en iframe'>
+  </iframe>
+</body>
+</html>

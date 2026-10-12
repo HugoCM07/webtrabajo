@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            header {
+                background: #356de6;
+                text-align: center;
+                padding: 10px 0;
+            }
+
+            header h1 {
+                margin: 0;
+                font-size: 22px;
+                color: #1a1a1a;
+            }
+
+            input[type="radio"],
+            input[type="checkbox"] {
+                accent-color: black;
+            }
+
+            .subgrupo {
+                margin-left: 25px;
+            }
+
+            .lista {
+                margin-top: 20px;
+            }
+
+            .numero-opcion {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin: 4px 0;
+            }
+
+            .numero {
+                display: inline-block;
+                min-width: 30px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <h1>lista no ordenada</h1>
+        </header>
+
+        <form class="lista">
+            <fieldset>
+                <input type="radio" id="opcion1" name="opciones" value="opcion1">
+                <label for="opcion1">Opcion1</label>
+                <br>
+
+                <input type="radio" id="opcion2" name="opciones" value="opcion2">
+                <label for="opcion2">Opcion2</label>
+
+                <div class="subgrupo">
+                    <input type="checkbox" id="opcion21" name="aficiones" value="deporte">
+                    <label for="opcion21">opcion21</label>
+                    <br>
+                    <input type="checkbox" id="opcion22" name="aficiones" value="musica">
+                    <label for="opcion22">opcion22</label>
+                </div>
+
+                <br>
+                <input type="radio" id="opcion3" name="opciones" value="opcion3">
+                <label for="opcion3">Opcion3</label>
+                <br>
+                <input type="radio" id="opcion4" name="opciones" value="opcion4">
+                <label for="opcion4">Opcion4</label>
+                <br>
+                <input type="radio" id="opcion5" name="opciones" value="opcion5">
+                <label for="opcion5">Opcion5</label>
+            </fieldset>
+        </form>
+
+        <header>
+            <h1>lista ordenada</h1>
+        </header>
+          <form class="lista">
+            <fieldset>
+                <div class="numero-opcion">
+                    <span class="numero">1</span>
+                    <span>Opcion1</span>
+                </div>
+
+                <div class="numero-opcion">
+                    <span class="numero">2</span>
+                    <span>Opcion2</span>
+                </div>
+
+                <div class="subgrupo">
+                    <input type="checkbox" id="opcion21b" name="aficiones2" value="deporte">
+                    <label for="opcion21b">opcion21</label>
+                    <br>
+                    <input type="checkbox" id="opcion22b" name="aficiones2" value="musica">
+                    <label for="opcion22b">opcion22</label>
+                </div>
+
+                <div class="numero-opcion">
+                    <span class="numero">3</span>
+                    <span>Opcion3</span>
+                </div>
+
+                <div class="numero-opcion">
+                    <span class="numero">4</span>
+                    <span>Opcion4</span>
+                </div>
+                  <div class="subgrupo">
+                    <div class="numero-opcion">
+                        <span class="numero">a</span>
+                        <span>Opcion41</span>
+                    </div>
+                    <div class="subgrupo">
+                        <div class="numero-opcion">
+                            <span class="numero">I</span>
+                            <span>Opcion411</span>
+                        </div>
+
+                        <div class="numero-opcion">
+                            <span class="numero">II</span>
+                            <span>Opcion412</span>
+                        </div>
+                    </div>
+
+                    <div class="numero-opcion">
+                        <span class="numero">b</span>
+                        <span>Opcion42</span>
+                    </div>
+                </div>
+                <div class="numero-opcion">
+                    <span class="numero">5</span>
+                    <span>Opcion5</span>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
