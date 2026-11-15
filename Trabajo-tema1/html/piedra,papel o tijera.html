@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Juega a piedra, papel o tijera y comprueba quién gana cada ronda."
+    />
+    <title>Piedra, papel o tijera</title>
+    <link rel="stylesheet" href="../css/piedra,papel o tijera.css" />
+    <script defer src="../java/piedra,papel o tijera.js"></script>
+  </head>
+  <body>
+    <main class="game">
+      <header class="game-header">
+        <p class="eyebrow">Un clásico de siempre</p>
+        <h1>Piedra, papel <span>o tijera</span></h1>
+        <p class="intro">¿Tienes lo necesario para vencer a la máquina?</p>
+      </header>
+
+      <section class="game-card" aria-labelledby="elige-titulo">
+        <div class="section-title">
+          <span class="step-number" aria-hidden="true">01</span>
+          <div>
+            <h2 id="elige-titulo">Elige tu jugada</h2>
+            <p>La suerte está echada. ¡Tú primero!</p>
+          </div>
+        </div>
+
+        <div class="choices" aria-label="Elige piedra, papel o tijera">
+          <button class="choice" type="button" data-choice="piedra">
+            <span class="choice-icon" aria-hidden="true">✊</span>
+            <span>Piedra</span>
+          </button>
+          <button class="choice" type="button" data-choice="papel">
+            <span class="choice-icon" aria-hidden="true">✋</span>
+            <span>Papel</span>
+          </button>
+          <button class="choice" type="button" data-choice="tijera">
+            <span class="choice-icon" aria-hidden="true">✌️</span>
+            <span>Tijera</span>
+          </button>
+        </div>
+
+        <section
+          class="round"
+          id="resultado"
+          data-result="none"
+          aria-labelledby="resultado-titulo"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          <div class="round-heading">
+            <span class="step-number" aria-hidden="true">02</span>
+            <h2 id="resultado-titulo">Última ronda</h2>
+          </div>
+          <div class="duel">
+            <div class="player">
+              <span class="player-label">Tú</span>
+              <span class="player-icon" id="icono-jugador" aria-hidden="true">?</span>
+              <span class="player-choice" id="jugada-jugador">Por jugar</span>
+            </div>
+            <span class="versus" aria-hidden="true">VS</span>
+            <div class="player">
+              <span class="player-label">Máquina</span>
+              <span class="player-icon" id="icono-maquina" aria-hidden="true">?</span>
+              <span class="player-choice" id="jugada-maquina">Por jugar</span>
+            </div>
+          </div>
+          <p class="message" id="mensaje">Elige una opción para empezar</p>
+        </section>
+
+        <section class="score-card" aria-labelledby="marcador-titulo">
+          <div class="score-heading">
+            <h2 id="marcador-titulo">Tu marcador</h2>
+            <button class="reset-button" id="reiniciar" type="button">
+              Reiniciar
+            </button>
+          </div>
+          <dl class="score">
+            <div class="score-item">
+              <dt>Partidas</dt>
+              <dd id="partidas">0</dd>
+            </div>
+            <div class="score-item score-wins">
+              <dt>Ganadas</dt>
+              <dd id="ganadas">0</dd>
+            </div>
+            <div class="score-item score-draws">
+              <dt>Empates</dt>
+              <dd id="empatadas">0</dd>
+            </div>
+            <div class="score-item score-losses">
+              <dt>Perdidas</dt>
+              <dd id="perdidas">0</dd>
+            </div>
+          </dl>
+        </section>
+      </section>
+
+      <footer class="game-footer">
+        <p>Mejor de tu suerte. ¡A jugar!</p>
+      </footer>
+    </main>
+  </body>
+</html

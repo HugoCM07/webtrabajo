@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="../css/ejercicio 2 actividad 1.css" />
+  </head>
+  <body class="pagina">
+    <header class="encabezado-pagina">
+      <h1>Ejercicio 2</h1>
+      <p>Imagen, enlaces y posicionamiento</p>
+    </header>
+
+    <main class="contenido-principal">
+      <iframe
+        class="actividad"
+        title="Ejemplo de imagen con texto superpuesto"
+        srcdoc="
+        <!DOCTYPE html>
+        <html lang='es'>
+          <head>
+            <meta charset='UTF-8'>
+            <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+            <title>Contenido del ejercicio</title>
+            <link rel='stylesheet' href='../css/ejercicio 2 actividad 1.css'>
+          </head>
+          <body class='contenido-iframe'>
+            <div class='contenedor'>
+              <img class='imagen-fondo' src='../css/otros/images.jpg' alt='Flor'>
+              <h2 class='encabezado'>
+                <span class='texto-rojo'>Esto es un encabezado h4</span>
+                <span class='texto-resaltado'>h2</span>
+              </h2>
+
+              <a class='boton' href='#footer'>Ir a capítulo 4:</a>
+
+              <div class='pre'>Esto es un texto<br>preformateado</div>
+              <p class='parrafo'>
+                Este hipervínculo va a
+                <a href='https://www.google.com' target='_blank' rel='noopener noreferrer'>Google</a>
+                <a class='boton-google' href='https://www.google.com' target='_blank' rel='noopener noreferrer'>Ir a Google</a>
+              </p>
+
+              <footer class='footer-ejercicio' id='footer'>
+                <span class='mini-box'>Hipervínculo en la misma página</span>
+                <span class='capitulo'>Esto es el capítulo 4</span>
+              </footer>
+            </div>
+          </body>
+        </html>
+        "
+      ></iframe>
+    </main>
+
+    <footer class="pie-pagina">
+      <p>Ejercicio de HTML y CSS</p>
+    </footer>
+  </body>
+</html>
