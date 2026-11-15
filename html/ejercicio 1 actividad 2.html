@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listas y opciones</title>
+    <link rel="stylesheet" href="../css/ejercicio 1 actividad 2.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <p class="eyebrow">Práctica de HTML</p>
+      <h1>Listas y opciones</h1>
+      <p>Ejemplos de listas anidadas, selección y numeración</p>
+    </header>
+
+    <main>
+      <section class="card" aria-labelledby="lista-no-ordenada">
+        <div class="section-heading">
+          <span class="section-number">01</span>
+          <div>
+            <p class="eyebrow">Selección</p>
+            <h2 id="lista-no-ordenada">Lista no ordenada</h2>
+          </div>
+        </div>
+        <form>
+          <fieldset>
+            <legend>Selecciona una opción</legend>
+            <ul class="opciones">
+              <li>
+                <input type="radio" id="opcion1" name="opciones" value="opcion1" />
+                <label for="opcion1">Opción 1</label>
+              </li>
+              <li>
+                <input type="radio" id="opcion2" name="opciones" value="opcion2" />
+                <label for="opcion2">Opción 2</label>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="opcion21" name="aficiones" value="deporte" />
+                    <label for="opcion21">Opción 2.1</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="opcion22" name="aficiones" value="musica" />
+                    <label for="opcion22">Opción 2.2</label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <input type="radio" id="opcion3" name="opciones" value="opcion3" />
+                <label for="opcion3">Opción 3</label>
+              </li>
+              <li>
+                <input type="radio" id="opcion4" name="opciones" value="opcion4" />
+                <label for="opcion4">Opción 4</label>
+              </li>
+              <li>
+                <input type="radio" id="opcion5" name="opciones" value="opcion5" />
+                <label for="opcion5">Opción 5</label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </section>
+
+      <section class="card" aria-labelledby="lista-ordenada-titulo">
+        <div class="section-heading">
+          <span class="section-number">02</span>
+          <div>
+            <p class="eyebrow">Jerarquía</p>
+            <h2 id="lista-ordenada-titulo">Lista ordenada</h2>
+          </div>
+        </div>
+        <ol class="lista-ordenada">
+          <li>Opción 1</li>
+          <li>
+            Opción 2
+            <ul>
+              <li>Opción 2.1</li>
+              <li>Opción 2.2</li>
+            </ul>
+          </li>
+          <li>Opción 3</li>
+          <li>
+            Opción 4
+            <ol type="a">
+              <li>
+                Opción 4.1
+                <ol type="I">
+                  <li>Opción 4.1.1</li>
+                  <li>Opción 4.1.2</li>
+                </ol>
+              </li>
+              <li>Opción 4.2</li>
+            </ol>
+          </li>
+          <li>Opción 5</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Ejercicio de HTML y CSS</p>
+      <a href="#top">Volver arriba</a>
+    </footer>
+  </body>
+</html>

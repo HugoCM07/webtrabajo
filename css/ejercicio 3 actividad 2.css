@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+.pagina {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background: #f3f6fa;
+  color: #203047;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.encabezado-pagina,
+.pie-pagina {
+  padding: 1rem 1.5rem;
+  background: #10243a;
+  color: #fff;
+  text-align: center;
+}
+
+.encabezado-pagina h1,
+.encabezado-pagina p,
+.pie-pagina p {
+  margin: 0;
+}
+
+.encabezado-pagina h1 {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+}
+
+.encabezado-pagina .etiqueta {
+  margin-bottom: 0.35rem;
+  color: #65ead5;
+  font-size: 0.75rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contenido-principal {
+  width: min(100% - 2rem, 1000px);
+  margin: 1.5rem auto;
+  flex: 1;
+}
+
+.actividad {
+  display: block;
+  width: 100%;
+  height: 700px;
+  border: 0;
+  border-radius: 12px;
+  background: #535252;
+  box-shadow: 0 12px 32px rgba(27, 47, 70, 0.14);
+}
+
+.pie-pagina {
+  margin-top: auto;
+  color: #b7c5d5;
+  font-size: 0.9rem;
+}
+
+.contenido-iframe {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.escena {
+  position: relative;
+  min-height: 700px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.imagen-fondo {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  inset: 0;
+}
+
+.escena::before {
+  position: absolute;
+  z-index: -1;
+  background: rgba(15, 25, 38, 0.2);
+  content: "";
+  inset: 0;
+}
+
+.bloque {
+  position: absolute;
+  left: 20px;
+  width: min(calc(100% - 40px), 900px);
+  padding: 20px 28px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.bloque-superior {
+  top: 20px;
+  border: 1px solid #999;
+  background: rgba(45, 50, 58, 0.88);
+  color: white;
+}
+
+.bloque-superior h2 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+.bloque-superior p,
+.bloque-inferior p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.bloque-superior p + p {
+  margin-top: 0.75rem;
+}
+
+.bloque-inferior {
+  bottom: 25px;
+  border: 1px solid #caa800;
+  background: rgba(255, 220, 0, 0.94);
+  color: #202020;
+}
+
+.resaltado {
+  padding: 2px 4px;
+  border-radius: 3px;
+  background: #d9b3ff;
+}
+
+.marcado {
+  display: inline-block;
+  margin: 0 4px;
+  padding: 2px 6px;
+  border: 2px solid green;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.cita {
+  padding: 2px 4px;
+  border-radius: 3px;
+  background: white;
+}
+
+@media (max-width: 700px) {
+  .contenido-principal {
+    width: calc(100% - 1rem);
+    margin: 0.5rem auto;
+  }
+
+  .actividad {
+    height: 760px;
+  }
+
+  .escena {
+    min-height: 760px;
+    padding: 10px;
+  }
+
+  .bloque {
+    left: 10px;
+    width: calc(100% - 20px);
+    padding: 14px;
+  }
+
+  .bloque-superior {
+    top: 10px;
+  }
+
+  .bloque-inferior {
+    bottom: 10px;
+  }
+}

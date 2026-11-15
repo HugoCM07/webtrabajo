@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas de ejemplo</title>
+    <link rel="stylesheet" href="../css/ejercicio 3 actividad 1.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Ejemplos de tablas HTML</h1>
+    </header>
+
+    <main>
+      <section aria-labelledby="tabla-prueba-1">
+        <h2 id="tabla-prueba-1">Tabla prueba 1</h2>
+        <div class="tabla-contenedor">
+          <table>
+            <caption>Tabla 1: celdas combinadas</caption>
+            <thead>
+              <tr>
+                <th scope="col">Columna 1</th>
+                <th scope="col">Columna 2</th>
+                <th scope="col">Columna 3</th>
+                <th scope="col">Columna 4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>col1</td>
+                <td colspan="2">col2</td>
+                <td rowspan="2">col3</td>
+              </tr>
+              <tr>
+                <td>colum1</td>
+                <td>colum2</td>
+                <td>colum4</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section aria-labelledby="tabla-prueba-2">
+        <h2 id="tabla-prueba-2">Tabla prueba 2</h2>
+        <div class="tabla2-contenedor">
+          <table class="tabla2">
+            <caption>Tabla 2: celdas combinadas</caption>
+            <thead>
+              <tr>
+                <th scope="col">Columna 1</th>
+                <th scope="col">Columna 2</th>
+                <th scope="col">Columna 3</th>
+                <th scope="col">Columna 4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>col1</td>
+                <td colspan="2">col2</td>
+                <td>col3</td>
+              </tr>
+              <tr>
+                <td>colum1</td>
+                <td rowspan="2">colum2</td>
+                <td>colum3</td>
+                <td>colum4</td>
+              </tr>
+              <tr>
+                <td>column 1</td>
+                <td>column 3</td>
+                <td>column 4</td>
+              </tr>
+              <tr>
+                <td>colu1</td>
+                <td>colu2</td>
+                <td>colu3</td>
+                <td>colu4</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Ejercicio de HTML y CSS</p>
+    </footer>
+  </body>
+</html>
